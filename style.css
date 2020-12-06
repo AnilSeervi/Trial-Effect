@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  overflow: hidden;
+  font-family: "Monument Extended", sans-serif;
+}
+.text {
+  position: absolute;
+  pointer-events: none;
+  font-size: 6em;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 1.6px #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #161616;
+}
+.text span {
+  color: #ffffff;
+}

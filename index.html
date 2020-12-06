@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.cdnfonts.com/css/monument-extended"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Text Trial Effect</title>
+  </head>
+  <body>
+    <div class="cursor">
+      <div class="text">Anil Seervi</div>
+      <div class="text">Anil Seervi</div>
+      <div class="text">Anil Seervi</div>
+      <div class="text">Anil Seervi</div>
+      <div class="text"><span>Anil Seervi</span></div>
+    </div>
+    <script>
+      document.addEventListener("mousemove", (e) => {
+        gsap.to(".text", {
+          x: e.clientX,
+          y: e.clientY,
+          stagger: -0.03,
+        }); 
+      });
+    </script>
+  </body>
+</html>
